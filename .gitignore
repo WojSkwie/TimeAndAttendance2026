@@ -429,3 +429,15 @@ FodyWeavers.xsd
 
 # Local implementation plan
 /plan.md
+
+# React / Vite frontend
+/web/**/node_modules/
+/web/**/dist/
+/web/**/dist-ssr/
+/web/**/.vite/
+/web/**/coverage/
+/web/**/*.tsbuildinfo
+/web/**/.env
+/web/**/.env.*
+!/web/**/.env.example
+!/web/**/.env.*.example

@@ -41,5 +41,27 @@ The `Integration` folder currently verifies `/health` through an in-process API 
 Domain and Application currently have no test cases because their implementations are empty.
 Database integration tests will use real SQL Server when persistence is added.
 
-Current progress: the four-project backend skeleton, `/health`, and one test project.
-React and local SQL Server setup are subsequent Phase 1 steps.
+## Frontend
+
+React + TypeScript with Vite lives in `web/worktime-web`.
+From the repository root:
+
+```bash
+nvm use
+cd web/worktime-web
+npm ci
+npm run dev
+```
+
+Open http://localhost:5173. The initial page is a WorkTime placeholder.
+
+To verify the frontend from its directory:
+
+```bash
+npm run typecheck
+npm run lint
+npm run build
+```
+
+Current progress: the backend skeleton, `/health`, one test project, and the React starter.
+Local SQL Server setup remains in Phase 1.
